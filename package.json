@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^5.3.14",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,7 +11,8 @@
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "storybook-chromatic": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "CHROMATIC_APP_CODE=5dxsjzhijhn chromatic"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,12 +39,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.8.3",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-links": "^5.3.13",
     "@storybook/addon-storyshots": "^5.3.13",
     "@storybook/addons": "^5.3.13",
+    "@storybook/api": "^5.3.14",
+    "@storybook/components": "^5.3.14",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
+    "@storybook/theming": "^5.3.14",
     "react-test-renderer": "^16.12.0"
   }
 }
